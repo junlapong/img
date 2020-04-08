@@ -1,15 +1,31 @@
-# [img.spacet.me](https://img.spacet.me)
+# img
 
-Y’know, it’s \${new Date().getFullYear()} and some services still don’t let you upload images, instead asking for an image URL.
+from [dtinth/img](https://github.com/dtinth/img)
 
-![A screenshot of GitHub Wiki edit page, with an “insert image” model, not letting you upload an image but asking you for a URL.](https://drive.google.com/uc?export=view&id=1jcJPgvW-fd3itKzhgb1CqA7G86w_cniR)
+## Notes
 
-This little web application lets you upload a file to Google Drive.
-Once uploaded, the sharing settings will be changed to “Anyone with the link can view,”
-and a direct URL to the file is generated for you, ready for copying.
+- https://www.facebook.com/dtinth/posts/10214285333521419
+- [Permalinks for Google Drive Images](https://googlesystem.blogspot.com/2013/02/permalinks-for-google-drive-images.html)
 
-[![A screenshot of the app](https://raw.githubusercontent.com/dtinth/timelapse/master/projects/img_demo.png)](https://img.spacet.me)
+## Ideas
 
-You can choose the output format (just URL, Markdown, or customize it yourself).
+1. Sign in with google account
+2. Upload image to goole drive with public access grant
+3. Then
 
-### &rarr; [img.spacet.me](https://img.spacet.me)
+replace this URL from the address bar:
+
+    http://docs.google.com/file/d/FILEID/edit
+
+with:
+
+    http://drive.google.com/uc?export=view&id=FILEID
+
+(where FILEID is a long sequence of digits and letters).
+
+This only works if you've changed the visibility options to "__public on the Web__" or "__anyone with the link__" in the Share dialog.
+
+---
+
+![Fixing-a-bug-in-production.gif](https://drive.google.com/uc?export=view&id=1ehcfiHmFO_lw0V9aPx6BALd_pYOh7m7R)
+
